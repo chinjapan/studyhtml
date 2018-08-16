@@ -7,13 +7,13 @@
                 var W=document.getElementById("weight").value;
                 var H=document.getElementById("height").value;
                 var R=W/(H*H) //Tinh toan
-                if (R >0) document.getElementById("result").textContent="Chỉ số BMI của chị Phương là : " + R;
+                if (R >0) document.getElementById("result").textContent="お客様のBMIは : " + R;
             }
         </script>
     </head>
         <title>Calculate to BMI</title>
     <body>
-        <h1>Xin mời chị Phương thân yêu nhập dữ liệu vào @@ </h1>
+        <h1>体重と身長を入力いただいて、Calのボタンをクリックしてください </h1>
         <div>体重:<input type="number" id="weight"/></div>
         <div>身長:<input type="number" id="height"/></div>
         <div><button onclick="cal()">Cal</button></div>
