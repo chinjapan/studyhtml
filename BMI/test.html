@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src=""></script>
+        <meta charset="utf-8">
+        <script>
+            function cal(){
+                var W=document.getElementById("weight").value;
+                var H=document.getElementById("height").value;
+                var R=W/(H*H) //Tinh toan
+                if (R >0) document.getElementById("result").textContent="Chỉ số BMI của chị Phương là : " + R;
+            }
+        </script>
     </head>
-    <title></title>
-    <p>Bechin</p>
+        <title>Calculate to BMI</title>
+    <body>
+        <h1>Xin mời chị Phương thân yêu nhập dữ liệu vào @@ </h1>
+        <div>体重:<input type="number" id="weight"/></div>
+        <div>身長:<input type="number" id="height"/></div>
+        <div><button onclick="cal()">Cal</button></div>
+        <div><p id="result"></p></div>    
+    </body>
+    
 </html>
